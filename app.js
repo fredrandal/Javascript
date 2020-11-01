@@ -1,6 +1,15 @@
 
     // Create Dino Constructor
+function Dino(species,weight,height,diet,where,when,fact){
+    this.species = species;
+    this.weight = weight;
+    this.height = height;
+    this.diet = diet;
+    this.where = where;
+    this.when = when;
+    this.fact = fact;
 
+};
 
     // Create Dino Objects
 
@@ -30,3 +39,6 @@
 
 
 // On button click, prepare and display infographic
+document.getElementById("btn").onclick = function() {
+    document.getElementById("dino-compare").style.display = "none";
+};
